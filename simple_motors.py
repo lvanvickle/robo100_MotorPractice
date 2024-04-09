@@ -19,18 +19,22 @@ try:
 		
 		if(user_choice.lower() == "f"):
 			rover.forward()
-			time.sleep(1)
+			time.sleep(2)
+			rover.stop()
 		elif(user_choice.lower() == "b"):
 			rover.backward()
-			time.sleep(1)
+			time.sleep(2)
+			rover.stop()
 		elif(user_choice.lower() == "l"):
-			motor_left.stop()
+			motor_left.move_stop()
 			motor_right.move_forward()
-			time.sleep(1)
+			time.sleep(2)
+			rover.stop()
 		elif(user_choice.lower() == "r"):
 			motor_left.move_forward()
-			motor_right.stop()
-			time.sleep(1)
+			motor_right.move_stop()
+			time.sleep(2)
+			rover.stop()
 		else:
 			print("Invalid option. Please re-enter.")
 except KeyboardInterrupt:
