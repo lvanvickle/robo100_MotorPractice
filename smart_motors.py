@@ -9,8 +9,8 @@ GPIO.setmode(GPIO.BCM) # Use BCM GPIO numbering
 GPIO.setwarnings(False)
 
 # Motor set up
-motor_left = Motor(4, 14)
-motor_right = Motor(17, 27)
+motor_left = Motor(17, 27)
+motor_right = Motor(20, 21)
 
 # Create rover instance
 rover = Rover(motor_left, motor_right)
