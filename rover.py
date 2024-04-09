@@ -14,5 +14,5 @@ class Rover:
 		self.motor_right.move_backward()
 		
 	def stop(self):
-		self.motor_left.stop()
-		self.motor_right.stop()
+		self.motor_left.move_stop()
+		self.motor_right.move_stop()
