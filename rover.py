@@ -1,3 +1,5 @@
+import RPi.GPIO as GPIO
+
 class Rover:
 	def __init__(self, motor_left, motor_right):
 		self.motor_left = motor_left
